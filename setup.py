@@ -24,6 +24,7 @@ install_requires = [
     'django-kombu==0.9.2',
     'django-followit',
     'python-openid',
+    'django-recaptcha',
 ]
 
 #todo: have a dirty version retriever that 
