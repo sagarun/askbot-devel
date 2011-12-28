@@ -258,6 +258,11 @@ urlpatterns = patterns('',
         {'feed_dict': feeds},
         name='feeds'
     ),
+    url(
+          r'^export/pdf/question/(?P<question_id>\d+)/$',
+          'askbot.export.to_pdf',
+          name='export'
+        ),
     #upload url is ajax only
     url( r'^%s$' % _('upload/'), views.writers.upload, name='upload'),
     url(r'^%s$' % _('feedback/'), views.meta.feedback, name='feedback'),
